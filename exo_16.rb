@@ -13,8 +13,8 @@ while etages > 25#condition maxi nombre d'étage
 
 etages.times do# création boucle .times do des étages 
 
-    carre.times do |i| #création boucle des # 
-       print " " +1 # imprimes sur la même ligne 
+    carre.times do #création boucle des # 
+       print " " # imprimes sur la même ligne 
        end# fin de  boucle carré.times do 
        carre -= 1 #  les # incrémenté moins 1 
        puts "#"# imprime a la ligne les espaces 
