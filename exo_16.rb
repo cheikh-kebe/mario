@@ -1,22 +1,21 @@
+puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
 
-  puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
+print ">"
 
-  print ">"
-  
-  etages = gets.chomp.to_i
-  carre = 1
-  
-  while etages > 25
-      puts "Réessayez ! La pyramide ne doit pas excéder 25 étages !"
-      print "> "
-      etages = gets.chomp.to_i
-    end
-  
-  etages.times do
-    carre -= 1
-      puts ""
-    carre.times do
-      print "#"
-    end
-         
+etages = gets.chomp.to_i#réponse de l'utilisateur va definir le nombre d'etage 
+carre = 1# represente un #
+
+while etages > 25#condition maxi nombre d'étage 
+    puts "Réessayez ! La pyramide ne doit pas excéder 25 étages !"# réponse si etage supérieur a 25
+    print "> "
+    etages = gets.chomp.to_i
   end
+
+etages.times do# création boucle .times do des étages 
+
+    carre.times do |i| #création boucle des # 
+       print " " +1 # imprimes sur la même ligne 
+       end# fin de  boucle carré.times do 
+       carre -= 1 #  les # incrémenté moins 1 
+       puts "#"# imprime a la ligne les espaces 
+end# fin de boucle etages
